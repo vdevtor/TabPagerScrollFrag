@@ -15,6 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+// NÃO SEI SE É CORRETO DIZER QUE ESTAMOS INSTANCIANDO O TABLAYOUT E O VIEW PAGER AQUI
+//MAS ESTAMOS FAZENDO COM QUE OS DOIS TRABALHEM JUNTOS....
+
+
         val tableLayout = findViewById<TabLayout>(R.id.tab_layoutID)
         val viewPager =findViewById<ViewPager>(R.id.view_PagerID)
         var adapter = FragmentViewPagerAdapter( this, this.supportFragmentManager)
